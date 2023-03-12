@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sub_iframe</title>
+</head>
+<body>
+    sub_iframe
+
+    <script type="text/javascript">
+        var myName = 'sub_iframe';
+
+
+        // sub_iframe.html中可以通过window.parent属性拿到iframe里的window属性
+        // console.log(window.parent);
+
+        // sub_iframe.html中可以通过window.parent.parent属性拿到main里的window属性
+        // console.log(window.parent.parent);
+        // sub_iframe.html中可以通过window.top属性拿到main里的window属性
+        // console.log(window.top.myName);
+    </script>
+</body>
+</html>

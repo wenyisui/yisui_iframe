@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe</title>
+</head>
+<body>
+    iframe
+    <iframe src="sub_iframe.html" width="400" height="400"></iframe>
+    <script type="text/javascript">
+        var myName = 'iframe';
+
+        // var iframe = document.getElementsByTagName('iframe')[0];
+
+        // iframe.onload = function () {
+        //     // iframe节点通过contentWindow可以访问到sub_iframe.html的window属性
+        //     console.log(iframe.contentWindow);
+        // }
+        
+        // iframe.html中可以通过window.parent属性拿到main里的window属性
+        // console.log(window.parent);
+
+        // iframe里面的页面操作父级的跳转
+        window.parent.location = 'http://www.baidu.com';
+    </script>
+</body>
+</html>
